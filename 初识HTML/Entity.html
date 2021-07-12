@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyworlds" content="Html&css学习，learn">
+    <title>Entity</title>
+</head>
+<!-- 
+    实体语法：&实体名字;
+    例如：想写
+    空格 &nbsp;
+    >    &gt;
+    <    &lt;
+    版权符号    &copy;
+ -->
+
+ <!-- 
+     <meta>       设置网页中元数据，不是给用户看的
+        charest   指定网页字符集
+        name      指定数据名称
+            keyworlds  搜索时的关键词，可指定一个或多个，用逗号隔开
+            discription 指定网站描述
+        content   指定数据内容
+        <meta http-equiv="refresh" content="3;url=https://www.baidu.com/?tn=62095104_33_oem_dg">
+        3秒后跳转页面至https://www.baidu.com/?tn=62095104_33_oem_dg
+        只有content中内容是可变的
+     <title>内容作为搜索时的超链接上的文字显示
+  -->
+<body>
+    <h1>今天,天气好！</h1>
+    <!-- 三个空格 -->
+    <h1>今天,&nbsp;&nbsp;&nbsp;天气好！</h1>  
+    <h1>今天, &nbsp; &nbsp; &nbsp;天气好！</h1>
+</body>
+</html>
