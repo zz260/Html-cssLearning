@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 
+    css编写位置：
+    1、在标签内部编写，只能单个标签使用
+    2、在style中编写，不能再其他文件中使用
+    3、在css文件中使用，需要与html文件建立链接，可以使用在多个文件
+        用link标签进行引用，将样式编写到外部的css文件中，可以最大限度使用浏览器的缓存机制
+        从而加快加载速度，提高用户体验
+    
+    css基本语法：
+        选择器 声明块
+        选择器：通过选择器选中页面中指定元素
+        声明块：通过指定元素设置样式，有一个个声明组成；是名值对结构：名:值,以;结尾
+    
+    常用选择器
+        元素选择器
+            作用：根据标签选择指定元素
+            语法：标签名{}
+            例子：p{} h1{}
+        
+        id选择器
+            作用：根据id的值选择一个元素
+            语法：#id属性值{}
+            例子：#box{} #red{}
+
+        类选择器
+            作用：根据class属性选中一组元素
+            语法：.class属性值{}
+        
+        通配选择器
+            作用：选择页面内所有元素
+            语法：*{}
+
+        交集选择器
+            作用：同时选择多种复合元素
+            语法：选择器1选择器选择器3{}
+            注意点：交集选择器如果有元素选择器，必须以元素选择器开头
+
+        选择器分组（并集选择器）
+            作用：同时选择多个选择器对应元素
+            语法：选择器1，选择器2，选择器3{}
+ -->
+<body>
+    <p>hello world</p>
+    <a id="red" href="https://www.baidu.com/?tn=62095104_33_oem_dg" target="_blank"> baidu </a>
+    <p class="name">我本将心向明月</p>
+    <!-- 
+        class 标签属性，与id相似，但class可以重复使用
+        可以通过class进行元素分组
+        可以设置多个class,使用空格隔开
+     -->
+    <p class="green">奈何明月照沟渠</p>
+    <h3>落霞与孤鹜齐飞</h3>
+    <p>秋水共长天一色</p>
+</body>
+</html>
