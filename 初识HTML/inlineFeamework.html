@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline framework</title>
+</head>
+<!-- 
+    内联框架：<iframe>
+        用途：向当前页面内引入一个其他页面
+        src -指定要引入的页面路径
+        frameborder -制定内联框架的边框  0/1 0：无边框；1：有边框
+        网页搜索不会因为网页中内联百度而在搜索百度时被检索到
+ -->
+<body>
+    <iframe src="https://www.baidu.com/?tn=62095104_33_oem_dg" frameborder="0" width="600" height="400"> baidu </iframe>
+    <br>
+    <!-- 
+        视频操作和音频一样
+        音频audio 用来向页面中引入一个外部的音频文件
+        音频文件引入时，默认情况下不允许用户自己控制播放器停止
+    属性：
+        controls 是否允许用户控制播放
+        autoplay 音频文件是否自动播放
+            如果设置了autoplay，
+            音乐再打开时会自动播放但是目前来讲大部分浏览器不会对音乐进行播放
+        loop 音频是否循环播放
+     -->
+     <audio src="../Picture/Maria - 友谊之光.mp3"controls loop></audio>
+
+    <!-- 为了兼容性，下面为一般写法 第二条兼容ie8 当地一条起作用就不会用第二条
+        可以使用src来指定外部文件也可以用source来指定外部文件
+    -->
+    <audio controls loop>
+        <source src="../Picture/Maria - 友谊之光.mp3">
+        <embed src="../Picture/Maria - 友谊之光.mp3" type="audio/mp3">
+    </audio>
+
+    <video src="../Picture/Maria - 友谊之光.mp3"></video>
+
+    <video>
+        <source src="../Picture/Maria - 友谊之光.mp3">
+        <embed src="../Picture/Maria - 友谊之光.mp3" type="video/mp3">
+    </video>
+</body>
+</html>

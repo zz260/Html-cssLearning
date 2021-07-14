@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture</title>
+</head>
+<!-- 
+    图片标签用于向网页内引入一个外部图片 
+    使用img标签引入外部图片，img标签是一个自结束标签（没有结束标签）
+    <img>标签属于替换元素（介于块元素和行内元素之间，具有娘中元素的特点）
+    属性：
+        src 通过制定外部图片路径来定位图片，路径和超链接路径规则一样
+        alt 图片描述，这个描述默认情况不会显示，当图片加载不出来时则会在 一些浏览器 中显示
+            搜索引擎会根据这个图片描述进行识别搜索 如果没有alt，搜索引擎则不会将图片收录
+        
+        width 调整图片宽度
+        height 调整图片高度
+        单位都是 像素
+        如果只改变一个，则另一个会等比缩放
+    注意：pc端不要进行图片缩放，要多大取多大；移动端经常进行图片缩放
+
+    图片格式 
+        png -支持颜色丰富，支持复杂透明，不支持动图
+            -专为网页而生
+        jpeg(jpg) 支持颜色丰富，不支持图片透明效果，不支持动图
+            一般用来显示照片
+        gif -支持颜色较少，支持简单透明，支持动图
+            -表示颜色单一，动图
+
+        webp -具有以上所有的优点，而且文件特别小，但是兼容性不好
+
+        base64
+            -将图片使用base64进行编码，将图片进行编码加密。
+            一般需要和网站一起加载时才会使用这种格式
+ -->
+<body>
+    <img src="../Picture/123.jfif" width="200px">
+
+    <img src="../Picture/12.jfif" alt="图片描述">
+</body>
+</html>
