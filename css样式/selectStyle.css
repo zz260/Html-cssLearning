@@ -9,7 +9,7 @@
 h3,
 .name,
 .green {
-    color: hsl(0, 86%, 48%);
+    color: hsl(278, 79%, 45%);
 }
 
 /* 
@@ -18,7 +18,7 @@ h3,
         语法：父元素>子元素
 */
 div.box>p {
-    color: rgb(230, 36, 36);
+    color: rgb(42, 162, 167);
 }
 
 /*
@@ -97,3 +97,28 @@ p[class=small] {
     :not()否定伪类
         -将符合条件的元素从选择器中去除
 */
+/*
+    超链接伪类：
+        :link 用来表示未访问过的链接（正常的链接）
+        :visited 表示访问过的链接
+            由于隐私的原因，visited只能修改链接颜色
+        :hover 用来表示鼠标移入的状态
+        :active 用来表示鼠标点击
+        hover标签要放在active前面
+    标签必须按照lvha顺序才会起效果
+ */
+
+    
+ a:link{
+     color: green;
+ }
+ a:visited{
+    color: yellow;
+ }
+ a:hover{
+     color: red;
+ }
+ a:active{
+     color: blue;
+ }
+ 
