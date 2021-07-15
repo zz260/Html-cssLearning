@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./selectStyle.css">
+    <title>Document</title>
+</head>
+<!-- 
+    常用选择器
+        元素选择器
+            作用：根据标签选择指定元素
+            语法：标签名{}
+            例子：p{} h1{}
+
+
+
+        
+        id选择器
+            作用：根据id的值选择一个元素
+            语法：#id属性值{}
+            例子：#box{} #red{}
+
+        类选择器
+            作用：根据class属性选中一组元素
+            语法：.class属性值{}
+        
+        通配选择器
+            作用：选择页面内所有元素
+            语法：*{}
+
+        交集选择器
+            作用：同时选择多种复合元素
+            语法：选择器1选择器选择器3{}
+            注意点：交集选择器如果有元素选择器，必须以元素选择器开头
+
+        选择器分组（并集选择器）
+            作用：同时选择多个选择器对应元素
+            语法：选择器1，选择器2，选择器3{}
+ -->
+<body>
+    <p class="name">我本将心向明月</p>
+    <!-- 
+        class 标签属性，与id相似，但class可以重复使用
+        可以通过class进行元素分组
+        可以设置多个class,使用空格隔开
+     -->
+    <p class="green">奈何明月照沟渠</p>
+    <h3>落霞与孤鹜齐飞</h3>
+    <p>秋水共长天一色</p>
+
+    <div class="box">
+        我是一个div元素
+        <p>
+            我是div中的p标签<br>
+            <span>我是p标签中的span元素</span>
+
+        </p>
+        <span class="span1">我是div中的span元素1</span><br>
+        <span>我是div中的span元素2</span><br>
+        <span>我是div中的span元素3</span><br>
+        <span>我是div中的span元素4</span><br>
+    </div>
+
+    <p title="abc">少小离家老大回</p>
+    <p title="abcdef">乡音无改鬓毛衰</p>
+    <p title="helloabc">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    <p>秋水共长天一色</p>
+    <p>落霞与孤鹜齐飞</p>
+    
+
+    <div>
+        <p>hhh</p>
+        <p class="small">small</p>
+        <span>
+            <p class="small">span-p</p>
+        </span>
+        <span>span-2</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.green {
+    font-size: 40px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+h3,
+.name,
+.green {
+    color: hsl(0, 86%, 48%);
+}
+
+/* 
+    子元素选择器
+        作用：选定父元素中的指定子元素
+        语法：父元素>子元素
+*/
+div.box>p {
+    color: rgb(230, 36, 36);
+}
+
+/*
+    后代元素选择器
+        作用：选定指定元素内的指定后代元素
+        语法：祖先 后代
+    选择下一个元素兄弟
+        语法：前一个+后一个
+    选择下边所有元素兄弟
+        语法：兄~弟盘
+
+*/
+div>p>span {
+    color: rgb(141, 212, 27);
+}
+
+/*
+    属性选择器
+        [属性名] ：       选择含有指定属性的元素
+        [属性名=属性值]： 选择含有指定属性且指定属性等于指定值的元素
+        [属性名^=属性值]：选择含有指定属性且指定属性以指定值开头的元素
+        [属性名$=属性值]：选择含有指定属性且指定属性以指定值结尾的元素
+        [属性名*=属性值]：选择含有指定属性且指定属性含有指定值的元素
+*/
+p[title] {
+    font-size: 40px;
+}
+
+p[title=abc] {
+    color: rgb(240, 25, 25);
+}
+
+p[title$=oabc] {
+    color: rgb(126, 31, 214);
+}
+
+p[title*=abc] {
+    background-color: cadetblue;
+}
+
+p[title^=abc] {
+    padding-left: 40px;
+}
+
+p[class=small] {
+    color: rgb(223, 14, 14);
+}
+
+
+/*
+    伪类（特殊类，不存在的类）
+        -伪类用来描述一个元素的特殊状态
+            例如：第一个元素，被点击的元素、鼠标移入的元素。。。
+        -伪类一般都是用:开头
+            :first-child  第一个子元素
+            :last-child   最后一个子元素
+            :nth-child(x) 第x个子元素
+                特殊值：
+                    n           第n个 n的范围是0到正无穷
+                    2n 或 even  第偶数个子元素
+                    2n+1 或 odd 第奇数个子元素
+            以上伪类都是以全部子元素进行排序
+    <div>
+        <p class="small">small</p>
+        <span>
+            <p class="small">span-p</p>
+        </span>
+        <span>span-2</span>
+    </div>
+        上面这种用div span:first-child则不会定位到第一个span，他不是div的第一个子元素，
+        若要定位，则使用下面的伪类
+        :first-of-type  
+        :last-of-type
+        其功能和上述的类似，但是是根据同类型进行排序
+    
+    :not()否定伪类
+        -将符合条件的元素从选择器中去除
+*/
