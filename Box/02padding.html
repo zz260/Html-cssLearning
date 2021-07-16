@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: solid skyblue 20px;
+            /* 
+                内边距（padding）
+                    -内容区和边框之间是内边距
+                    -一共有四个方向的内边距
+                        padding-top
+                        padding-right
+                        padding-bottom
+                        padding-left
+
+                    -内边距的设置会影响到对盒子的大小
+                    -背景颜色会延伸到内边距上
+                
+                盒子的可见框的大小包括：内容区；内边距；边框
+                padding可以简写，其编写规则和width一样
+             */
+             padding-top: 20px;
+        }
+        .inner{
+            background-color: rgb(27, 235, 120);
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
