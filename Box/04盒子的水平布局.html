@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子的水平布局</title>
+    <style>
+        .box1{
+            background-color: #e71818;
+            width: 200px;
+            height: 200px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: springgreen;
+            padding-top: 10px;
+        }
+        .inner1{
+            background-color: royalblue;
+            border-style: solid;
+            border-width: 5px;
+            width: 200px;
+            height: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+
+        }
+        .inner2{
+            background-color: rgb(18, 228, 70);
+            border-style: solid;
+            border-width: 5px;
+            border-color: sienna;
+            width: 200px;
+            height: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+    </style>
+</head>
+<!-- 
+    元素水平方向的布局：
+        元素水平方向的布局由以下几个属性决定：
+            margin-left
+            border-left
+            padding-left
+            width
+            padding-right
+            border-right
+            margin-right
+        一个元素在其父元素中水平布局必须满足以下的等式：
+margin-left+border-left+padding-left+width+padding-right+border-right+margin-right=父元素的width
+        -以上等式必须成立，如果相加结果使得等式不成立，则称其为过度约束，等式会进行调整
+            -调整情况：
+                -如果这七个值中没有auto，则浏览器会自动调整margin-right
+                -这七个值中有三个设为auto
+                    width
+                    margin-left
+                    margin-right
+                    -如果这三个值中某个值为auto ，则自动调整为auto的值使得等式成立
+                    -如果将一个宽度和外边距设置为auto，则宽度会调整到最大，设置为auto的外边距会置为0
+                    -如果将三个值都设为auto，则外边距都是0，宽度最大
+                    -如果将两个外边距设为auto，宽度不变，将外边距设置为相同值
+                        所以我们经常利用这一特点使元素在其父元素中水平居中
+ -->
+<body>
+    <div class="box1">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+    </div>
+</body>
+</html>
