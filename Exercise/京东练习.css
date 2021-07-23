@@ -1,0 +1,31 @@
+body{
+    margin: 0%;
+}
+.box1{
+    width: 200px;
+}
+ul{
+    padding:0%;
+}
+img{
+    width: 190px;
+    height: 150px;
+}
+.box2{
+    background-color: rgb(248, 248, 248);
+    width: 150px;
+    
+}
+.box2>div{
+    padding-left: 10px;
+}
+.inner2:hover{
+    background-color:rgb(170, 168, 168);
+}
+
+.inner1:hover {
+    background-color:rgb(170, 168, 168);
+}
+.box2 a:hover{
+    color: rgb(235, 17, 71);
+}
