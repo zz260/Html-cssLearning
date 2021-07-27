@@ -1,0 +1,44 @@
+.News {
+    width: 300px;
+    height: 280px;
+    border-top: darkgray 1px solid;
+}
+
+.News .News-title {
+    font-size: 18px;
+    display: inline-block;
+    border-top: red 1px solid;
+    padding-top: 5px;
+    margin-top: -1px;
+}
+
+.News-img {
+    width: 300px;
+    height: 140px;
+}
+
+.News .News-img .News-img-title {
+    font-size: 15px;
+    color: white;
+    margin-top: -25px;
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.News-img-title:hover {
+    color: red;
+}
+
+.News .News-contents {
+    font-size: 8px;
+    margin-left: -10px;
+    padding-left: -60px;
+}

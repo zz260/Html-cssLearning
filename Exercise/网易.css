@@ -37,6 +37,9 @@ h1{
     font-size: 15px;
     margin-left: 25px;
 }
+/*
+    span元素中margin-top和margin-bottom不生效
+ */
 .box2 .inner:hover{
     color: red;
 }
